@@ -1,0 +1,316 @@
+<!DOCTYPE html >
+<html lang="en">
+  
+  
+  
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family:'Candara', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #004040;
+            display: flex;
+            height: 100vh;
+        }
+
+        .navbar {
+            background-color: #006666;
+            color: #ecf0f1;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 350px;
+            height: 100%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color:rgb(0, 80, 80);;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        
+        .navbar {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img1 {
+          height:150px;
+          width:150px;
+          border-radius:5px;
+          padding:10px;
+        }
+        .img2{
+          height:150px;
+          width:150px;
+          border-radius:50%;
+          padding:10px;
+        }
+
+        h1{
+          font-size:xx-large;
+          font-family:"Lucida Fax", sans-serif;
+          font-weight:bolder;
+          color:teal;
+        }
+
+        h3{
+          font-size:x-large;
+          font-family:"Lucida Fax", sans-serif;
+          font-weight:bold;
+          color:teal;
+          text-decoration:overline;
+        }
+
+        p{
+          font-family:'Candara', sans-serif;
+          font-weight:bold;
+          font-size:large;
+        }
+        
+    </style>
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <div class="navbar">
+      <img src="C:\Users\thany\OneDrive\Desktop\WIN_20231226_09_51_24_Pro.jpg" style="border-radius:50%; height:200px; width:210px; border: 10px solid rgb(0, 80, 80);; border-radius: 50%"/>
+        <a onclick="showSection('section1')">ABOUT</a>
+        <a onclick="showSection('section2')">EXPERIENCE</a>
+        <a onclick="showSection('section3')">EDUCATION</a>
+        <a onclick="showSection('section4')">SKILLS</a>
+        <a onclick="showSection('section5')">OTHER INTERESTS</a>
+    </div>
+
+    <div class="content">
+        <div id="section1" class="section active">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <hr>
+            <h1>THANYAA S</h1>
+            
+            <h3>Bengaluru-560093 | 7019472480 | thanyaas.btech23@rvu.edu.in</h3>
+            <br>
+            <div>
+            <p>Aspiring college graduate specializing in computer science and front-end development.<br>And keen interest towards the development of robots.<br>Intellectual thinking towards problem and interactive communication among peers.</p>
+            </div>
+          </hr>
+        </div>
+
+        <div id="section2" class="section">
+          <br>
+          <br>
+            <h1>EXPERIENCE</h1>
+            <br>
+            <h3>Robotics Software Engineer</h3>
+            <p>Robotics Software Engineer | Advanced Robotics Solutions | 2027 - 2029</p>
+            <ul>
+              <li>Collaborated with the hardware team to integrate sensors and actuators into the robotic framework.</li>
+              <li>Conducted testing and debugging of robotic software, ensuring robust and reliable performance.</li>
+              <li>Developed control algorithms for robotic systems, focusing on real-time motion planning and trajectory optimization.</li>
+            </ul>
+            <br>
+            <h3>Robotics Researcher</h3>
+            <p>Robotics Researcher | Institute of Robotics and AI | 2029 - Present</p>
+            <ul>
+              <li>Implemented machine learning algorithms for robotic perception and decision-making.</li>
+              <li>Conducted research on advanced robotics topics, focusing on human-robot interaction and swarm robotics.</li>
+            </ul>
+        </div>
+
+        <div id="section3" class="section">
+            <h1>EDUCATION</h1>
+            <hr>
+              <div>
+                  <table border="5">
+                      <tr><th colspan="4"><h1 style="text-align:center; padding:10x;">SCHOOL</h1></th></tr>
+  
+                      <tbody>
+                      <tr>
+                         <th style="padding:15px;">School</th>
+                         <th style="padding:15px;">Board</th>
+                         <th style="padding:15px;">Class</th>
+                         <th style="padding:15px;">Percentage</th>
+                      </tr>
+                      
+                      <tr>
+                         <th>NCFE</th>
+                         <th>CBSE</th>
+                         <th>X</th>
+                         <th>95%</th>
+                      </tr>
+                      <tr>
+                         <th>NCFE</th>
+                         <th>CBSE</th>
+                         <th>XII</th>
+                         <th>95%</th>
+                      </tr>
+                      </tbody>
+                  </table>
+                  
+              </div>
+              
+            </hr>
+            <hr>
+            <div>
+                <table border="3">
+                    <tr><th colspan="3"><h1 style="text-align:center; padding:10px;">UNIVERSITY</h1></th></tr>
+
+                    <tbody>
+                    <tr>
+                       <th style="padding:10px;">College</th>
+                       <th style="padding:10px;">Degree</th>
+                       <th style="padding:10px;">Duration</th>
+                    </tr>
+                    
+                    <tr>
+                       <th style="padding:5px;">RVU</th>
+                       <th style="padding:8px;">BTech Hons. Comp</th>
+                       <th>4 years</th>
+                    </tr>
+                    <tr>
+                       <th style="padding:5px;">Harvard</th>
+                       <th style="padding:8px;">Masters in robotics</th>
+                       <th>2 years</th>
+                    </tr>
+                    <tr>
+                        <th style="padding:5px;">Standford</th>
+                        <th style="padding:8px;">Masters in ai-ml</th>
+                        <th>3 years</th>
+                    </tr>
+                    <tr>
+                      <th style="padding:5px;">Standford</th>
+                      <th style="padding:8px;">PhD in robotics/th>
+                      <th>3 years</th>
+                  </tr>
+                    
+                </table>
+                
+            </div>
+          </hr>
+        
+        </div>
+
+        <div id="section4" class="section">
+            <h1>SKILLS</h1>
+            <br>
+            <br>
+          <div>
+              <img src="C:\Users\thany\Downloads\javascript.png" alt="JavaScript" class="img1"/>
+              <img src="C:\Users\thany\Downloads\python.png" alt="Python" class="img1"/>
+              <img src="C:\Users\thany\Downloads\html.png" alt="html" class="img1"/>
+              <img src="C:\Users\thany\Downloads\css.png" alt="css" class="img1"/>
+              <img src="C:\Users\thany\Downloads\c.png" alt="c" class="img1"/>
+              <img src="C:\Users\thany\Downloads\sql.png" alt="sql" class="img1"/>
+          </div>
+          <br>
+          <br>
+          <ul>
+            <li><span style="font-weight:bold;">JavaScript</span> - 1 year</li>
+            <li><span style="font-weight:bold;">Python</span> - 4 years</li>
+            <li><span style="font-weight:bold;">HTML</span> - 5 years</li>
+            <li><span style="font-weight:bold;">CSS</span> - 2 years</li>
+            <li><span style="font-weight:bold;">C</span> - 6 months</li>
+            <li><span style="font-weight:bold;">SQL</span> - 2 years </li>
+          </ul>
+        </div>
+
+        <div id="section5" class="section">
+            <h1>EXTRA-INTERESTS</h1>
+
+            <br>
+            <br>
+            <ul>
+              
+              <li>Dipolma degree in painting</li>
+              <li>Book enthusiast</li>
+              <li>Journalling</li>
+              <li>Guitar</li>
+              <li>Baking</li>
+              
+            </ul>
+            <br>
+            <p> I take major priorities to retain my skills on extra curricular activities as well, I enjoy most of my time alone.<br>I love staying indoors and engaging myself in meditation.<br>I would like to deeply understand human emotions and the reasons for their actions per se.<br>Prefer philosophical conversations about life and love nature.<br>Avid watcher of series.</p>
+            <div>
+              <img src="C:\Users\thany\Downloads\guitar2.avif"alt="guitar" class="img2"/>
+              <img src="C:\Users\thany\Downloads\painting.webp" alt="painting" class="img2"/>
+              <img src="C:\Users\thany\Downloads\baking.jpeg" alt="baking" class="img2"/>
+              <img src="C:\Users\thany\Downloads\journal.jpeg" alt="journal" class="img2"/>
+              <img src="C:\Users\thany\Downloads\book.jpg" alt="book" class="img2"/>
+          </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+          
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+        }
+    </script>
+</body>
+
+
+  
+  
+</html>
